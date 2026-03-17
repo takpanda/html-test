@@ -8,7 +8,7 @@ DIST = Path("dist")
 DIST.mkdir(exist_ok=True)
 
 STATIC_EXTENSIONS = {
-    ".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".ico"
+    ".html", ".css", ".js", ".json", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".ico"
 }
 
 # Collect pages for index
