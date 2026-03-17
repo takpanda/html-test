@@ -10,4 +10,6 @@ Markdown → HTML 自動変換テスト
 
 ## デプロイ先
 
-`https://takpanda.github.io/html-test/`
+- Top: <https://takpanda.github.io/html-test/>
+- AI キーワード大全 2026: <https://takpanda.github.io/html-test/ai-trends/ai-keywords-2026.html>
+- AI キーワード大全 ツリービュー: <https://takpanda.github.io/html-test/ai-trends/ai-keywords-tree.html>
