@@ -1,10 +1,15 @@
 import os
+import shutil
 import markdown
 from pathlib import Path
 
 SRC = Path(".")
 DIST = Path("dist")
 DIST.mkdir(exist_ok=True)
+
+STATIC_EXTENSIONS = {
+    ".html", ".css", ".js", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".ico"
+}
 
 # Collect pages for index
 pages = []
@@ -48,6 +53,22 @@ for md_file in sorted(SRC.rglob("*.md")):
     )
     pages.append((rel, html_path))
     print(f"✅ {rel} → {html_path}")
+
+for static_file in sorted(SRC.rglob("*")):
+    if not static_file.is_file():
+        continue
+    if any(p.startswith(".") for p in static_file.parts) or "dist" in static_file.parts:
+        continue
+    if static_file.suffix.lower() not in STATIC_EXTENSIONS:
+        continue
+
+    rel = static_file.relative_to(SRC)
+    dist_path = DIST / rel
+    dist_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(static_file, dist_path)
+    if static_file.suffix.lower() == ".html":
+        pages.append((rel, dist_path))
+    print(f"📦 {rel} → {dist_path}")
 
 # Generate index.html
 if pages:
