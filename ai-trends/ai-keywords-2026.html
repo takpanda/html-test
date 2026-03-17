@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI キーワード大全 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&display=swap');
+
+  :root {
+    --bg: #0f0f23;
+    --card-bg: #1a1a2e;
+    --accent: #6c63ff;
+    --accent2: #00d2ff;
+    --accent3: #ff6b6b;
+    --text: #e0e0e0;
+    --text-muted: #888;
+    --border: #2a2a4a;
+    --glow: rgba(108, 99, 255, 0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--glow) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+  .hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  .hero .year {
+    font-size: 5rem;
+    font-weight: 700;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Stats Bar */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat .num {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent2);
+  }
+  .stat .label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  /* Main Content */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* Category Section */
+  .category {
+    margin-bottom: 3rem;
+  }
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+  }
+  .category-icon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 16px;
+    flex-shrink: 0;
+  }
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .category-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  /* Keyword Grid */
+  .keyword-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  /* Keyword Card */
+  .keyword-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .keyword-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 30px var(--glow);
+  }
+  .keyword-card .tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .tag-hot { background: #ff6b6b33; color: #ff6b6b; }
+  .tag-rising { background: #ffd93d33; color: #ffd93d; }
+  .tag-new { background: #6bcb7733; color: #6bcb77; }
+  .tag-core { background: #6c63ff33; color: #6c63ff; }
+
+  .keyword-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: #fff;
+  }
+  .keyword-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .keyword-card .growth {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.8rem;
+    color: #6bcb77;
+    font-weight: 600;
+  }
+
+  /* Trend Bar */
+  .trend-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+  }
+  .trend-bar .bar-bg {
+    flex: 1;
+    height: 6px;
+    background: #2a2a4a;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .trend-bar .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+  .trend-bar .pct {
+    font-size: 0.75rem;
+    color: var(--accent2);
+    font-weight: 600;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 2rem; }
+    .stats { gap: 1.5rem; }
+    .keyword-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="year">2026</div>
+  <h1>🤖 AI キーワード大全</h1>
+  <p class="subtitle">2026年 最新AIトレンド＆キーワード体系マップ</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num">50+</div><div class="label">キーワード</div></div>
+  <div class="stat"><div class="num">8</div><div class="label">カテゴリ</div></div>
+  <div class="stat"><div class="num">2026</div><div class="label">最新版</div></div>
+</div>
+
+<div class="container">
+
+  <!-- 1. 基盤モデル -->
+  <section class="category">
+    <div class="category-header">
+      <div class="category-icon">🧠</div>
+      <div>
+        <div class="category-title">基盤モデル＆LLM</div>
+        <div class="category-desc">大規模言語モデルの最新動向</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>Reasoning Model (推論モデル)</h3>
+        <p>Chain-of-Thoughtを内蔵し、段階的に思考するモデル。OpenAI o3、Claude Opus 4、Gemini 2.5 Proが代表格。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:95%"></div></div><div class="pct">95%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>Multimodal LLM</h3>
+        <p>テキスト・画像・音声・動画を統合的に処理。GPT-4o、Gemini Ultra、Claudeが対応。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:92%"></div></div><div class="pct">92%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Small Language Model (SLM)</h3>
+        <p>軽量・高速・オンデバイス実行。Phi-4、Gemma 3、Qwen3など。エッジAIの基盤技術。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div><div class="pct">85%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>Mixture of Experts (MoE)</h3>
+        <p>複数の専門サブモデルを使い分けるアーキテクチャ。効率的にパラメータを拡大可能。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div><div class="pct">78%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-core">CORE</span>
+        <h3>Context Window</h3>
+        <p>LLMが一度に処理できるトークン数。2026年は100万〜1000万トークンが標準に。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><div class="pct">88%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. エージェント -->
+  <section class="category">
+    <div class="category-header">
+      <div class="category-icon">🤝</div>
+      <div>
+        <div class="category-title">AIエージェント</div>
+        <div class="category-desc">自律的にタスクを遂行するAIシステム</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>Agentic AI</h3>
+        <p>自律的に目標達成のため計画を立て、ツールを使い、実行するAI。2026年最大のトレンド。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:98%"></div></div><div class="pct">98%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>MCP (Model Context Protocol)</h3>
+        <p>Anthropicが提唱するAIエージェントと外部ツールの接続標準プロトコル。業界標準に。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div><div class="pct">90%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Multi-Agent System</h3>
+        <p>複数のAIエージェントが協調・分業して複雑なタスクを遂行。CrewAI、AutoGen、LangGraph。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:87%"></div></div><div class="pct">87%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>Computer Use Agent</h3>
+        <p>画面を認識しマウス・キーボード操作するAI。Claude Computer Use、OpenAI Operator。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div><div class="pct">82%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Deep Research</h3>
+        <p>数十〜数百のソースを自動調査しレポート生成。OpenAI Deep Research、Gemini Deep Research。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:91%"></div></div><div class="pct">91%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. コーディング -->
+  <section class="category">
+    <div class="category-header">
+      <div class="category-icon">💻</div>
+      <div>
+        <div class="category-title">AIコーディング</div>
+        <div class="category-desc">開発者の生産性を革命的に向上</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>Coding Agent</h3>
+        <p>コード生成・リファクタリング・PR作成を自律実行。Claude Code、Codex、Cursor Agent。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:96%"></div></div><div class="pct">96%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-core">CORE</span>
+        <h3>AI Copilot</h3>
+        <p>IDE内で補完・提案するAIアシスタント。GitHub Copilot、Cursor、Windsurf。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:93%"></div></div><div class="pct">93%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Vibe Coding</h3>
+        <p>自然言語で感覚的にコード生成。Andrej Karpathyが命名した2025年トレンドワード。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div><div class="pct">80%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>AI Code Review</h3>
+        <p>AIがPRを自動レビューしバグ検出・セキュリティ指摘・改善提案。CodeRabbit、Copilot Review。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:75%"></div></div><div class="pct">75%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 画像・動画生成 -->
+  <section="category">
+    <div class="category-header">
+      <div class="category-icon">🎨</div>
+      <div>
+        <div class="category-title">画像・動画・音声生成</div>
+        <div class="category-desc">クリエイティブAIの最前線</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>AI Video Generation</h3>
+        <p>テキストから高品質動画生成。Sora 2、Veo 3、Kling 2.0、Runway Gen-4。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:93%"></div></div><div class="pct">93%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>Image Generation (最新)</h3>
+        <p>GPT-4o 原生画像生成、Midjourney v7、Flux 2、Imagen 4。品質が劇的に向上。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:91%"></div></div><div class="pct">91%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Voice AI / TTS</h3>
+        <p>自然な音声合成・リアルタイム翻訯。ElevenLabs、OpenAI Voice、GPT-4o Audio。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:84%"></div></div><div class="pct">84%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>Synthetic Content</h3>
+        <p>AI生成コンテンツの識別・検証技術。C2PA、Content Credentials。真偽判定の重要性が増す。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:72%"></div></div><div class="pct">72%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. インフラ -->
+  <section class="category">
+    <div class="category-header">
+      <div class="category-icon">⚡</div>
+      <div>
+        <div class="category-title">AIインフラ＆ハードウェア</div>
+        <div class="category-desc">AIを支える基盤技術</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>AI Data Center</h3>
+        <p>AI専用データセンターの急増。電力需要は2030年までに倍増予測。冷却技術が課題。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:94%"></div></div><div class="pct">94%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-core">CORE</span>
+        <h3>GPU / AI Accelerator</h3>
+        <p>NVIDIA Blackwell Ultra、AMD MI400、Google TPU v6。AIチップ競争が激化。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div><div class="pct">90%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Edge AI</h3>
+        <p>デバイス側でAI処理。低レイテンシー・高プライバシー。スマートフォン・IoTで普及。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:83%"></div></div><div class="pct">83%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>Neuromorphic Computing</h3>
+        <p>人間の脳を模したチップ設計。超低電力で高効率なAI処理を実現。次世代アーキテクチャ。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:65%"></div></div><div class="pct">65%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-core">CORE</span>
+        <h3>AI Energy / Power</h3>
+        <p>AIの電力消費が国家レベルに。持続可能なエネルギーと効率的な冷却が最重要課題。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><div class="pct">88%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. RAG・検索 -->
+  <section class="category">
+    <div class="category-header">
+      <div class="category-icon">🔍</div>
+      <div>
+        <div class="category-title">RAG・検索・知識拡張</div>
+        <div class="category-desc">LLMの知識を外部で補完</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-core">CORE</span>
+        <h3>RAG (検索拡張生成)</h3>
+        <p>外部知識ベースを検索してLLMに提供。企業AIの基盤技術。精度と速度の両立が課題。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:92%"></div></div><div class="pct">92%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Agentic RAG</h3>
+        <p>エージェントが自律的に検索戦略を立て、複数ソースから情報を収集・統合する次世代RAG。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div><div class="pct">85%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>AI Search</h3>
+        <p>検索エンジン×LLMの融合。Perplexity AI（+66%）、ChatGPT Search（+64%）が急成長。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:89%"></div></div><div class="pct">89%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>Vector Database</h3>
+        <p>埋め込みベクトルを高速検索。Pinecone、Weaviate、Milvus、pgvector。RAGに不可欠。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div><div class="pct">80%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. セキュリティ・倫理 -->
+  <section class="category">
+    <div class="category-header">
+      <div class="category-icon">🛡️</div>
+      <div>
+        <div class="category-title">セキュリティ・倫理・ガバナンス</div>
+        <div class="category-desc">AIの安全な活用に向けて</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>AI Safety</h3>
+        <p>AIの暴走・悪用防止。Alignment、Red Teaming、Jailbreak対策。各国で規制強化。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:87%"></div></div><div class="pct">87%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>AI Regulation</h3>
+        <p>EU AI Act、日米のAI規制フレームワーク。高リスクAIシステムへの規制が本格化。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div><div class="pct">82%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-core">CORE</span>
+        <h3>AI Cybersecurity</h3>
+        <p>AI対AIのサイバーセキュリティ攻防。自動脅威検知 vs AI生成攻撃。攻防の激化。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:86%"></div></div><div class="pct">86%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>Sovereign AI</h3>
+        <p>国が独自のAIインフラ・データ・モデルを保有。日仏UAEが先行。国家安全保障に直結。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:79%"></div></div><div class="pct">79%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 応用分野 -->
+  <section class="category">
+    <div class="category-header">
+      <div class="category-icon">🌐</div>
+      <div>
+        <div class="category-title">応用分野＆産業別AI</div>
+        <div class="category-desc">実世界で活躍するAI技術</div>
+      </div>
+    </div>
+    <div class="keyword-grid">
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>Physical AI / ロボット</h3>
+        <p>実世界で動作するAI。産業ロボット、自律走行、ドローン。日本は世界シェア70%。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:91%"></div></div><div class="pct">91%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>Digital Twin</h3>
+        <p>物理システムのデジタル複製。AIと組み合わせリアルタイム最適化。BMWが30以上の工場で活用。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:81%"></div></div><div class="pct">81%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-rising">📈 RISING</span>
+        <h3>AlphaEvolve / AI Discovery</h3>
+        <p>LLMが新しいアルゴリズムや発見を自動生成。Google DeepMind、Sakana AIのSinkaEvolve。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><div class="pct">88%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-new">✨ NEW</span>
+        <h3>AI Healthcare</h3>
+        <p>創薬・診断支援・個別化医療。AIが医療のあらゆる領域に浸透。倫理面の議論も活発化。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div><div class="pct">85%</div></div>
+      </div>
+      <div class="keyword-card">
+        <span class="tag tag-hot">🔥 HOT</span>
+        <h3>AI Robotaxi / 自動運転</h3>
+        <p>Waymo拡大、Tesla FSD、中国勢の台頭。レベル4自動運転が都市部で商用化加速。</p>
+        <div class="trend-bar"><div class="bar-bg"><div class="bar-fill" style="width:84%"></div></div><div class="pct">84%</div></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>🤖 AI キーワード大全 2026 — Chappy が最新トレンドから収集</p>
+  <p>最終更新: 2026年3月14日 | <a href="https://github.com/takpanda/html-test">GitHub</a></p>
+</footer>
+
+</body>
+</html>
