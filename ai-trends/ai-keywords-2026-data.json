@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "title": "AI キーワード大全 2026",
+    "pageTitle": "AI キーワード大全 2026",
+    "subtitle": "2026年 最新AIトレンド＆キーワード体系マップ",
+    "year": "2026",
+    "updatedAt": "2026年3月17日",
+    "repoUrl": "https://github.com/takpanda/html-test"
+  },
+  "stats": [
+    { "num": "50+", "label": "キーワード" },
+    { "num": "8", "label": "カテゴリ" },
+    { "num": "2026", "label": "最新版" }
+  ],
+  "categories": [
+    {
+      "id": "foundation-models",
+      "icon": "🧠",
+      "title": "基盤モデル＆LLM",
+      "description": "大規模言語モデルの最新動向",
+      "keywords": [
+        {
+          "name": "Reasoning Model (推論モデル)",
+          "tag": "HOT",
+          "description": "Chain-of-Thought を内蔵し、段階的に思考するモデル。OpenAI o3、Claude Opus 4、Gemini 2.5 Pro が代表格。",
+          "score": 95
+        },
+        {
+          "name": "Multimodal LLM",
+          "tag": "HOT",
+          "description": "テキスト・画像・音声・動画を統合的に処理。GPT-4o、Gemini Ultra、Claude などが対応。",
+          "score": 92
+        },
+        {
+          "name": "Small Language Model (SLM)",
+          "tag": "RISING",
+          "description": "軽量・高速・オンデバイス実行。Phi-4、Gemma 3、Qwen3 など。エッジAIの基盤技術。",
+          "score": 85
+        },
+        {
+          "name": "Mixture of Experts (MoE)",
+          "tag": "NEW",
+          "description": "複数の専門サブモデルを使い分けるアーキテクチャ。効率的にパラメータを拡大可能。",
+          "score": 78
+        },
+        {
+          "name": "Context Window",
+          "tag": "CORE",
+          "description": "LLM が一度に処理できるトークン数。2026年は 100万〜1000万トークンが標準に。",
+          "score": 88
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "icon": "🤝",
+      "title": "AIエージェント",
+      "description": "自律的にタスクを遂行するAIシステム",
+      "keywords": [
+        {
+          "name": "Agentic AI",
+          "tag": "HOT",
+          "description": "自律的に目標達成のため計画を立て、ツールを使い、実行するAI。2026年最大のトレンド。",
+          "score": 98
+        },
+        {
+          "name": "MCP (Model Context Protocol)",
+          "tag": "HOT",
+          "description": "AIエージェントと外部ツールの接続標準プロトコル。今後の連携基盤として重要。",
+          "score": 90
+        },
+        {
+          "name": "Multi-Agent System",
+          "tag": "RISING",
+          "description": "複数のAIエージェントが協調・分業して複雑なタスクを遂行。CrewAI、AutoGen、LangGraph など。",
+          "score": 87
+        },
+        {
+          "name": "Computer Use Agent",
+          "tag": "NEW",
+          "description": "画面を認識しマウス・キーボード操作するAI。Claude Computer Use、OpenAI Operator など。",
+          "score": 82
+        },
+        {
+          "name": "Deep Research",
+          "tag": "RISING",
+          "description": "多数のソースを自動調査しレポート生成する機能。調査ワークフローの中核へ。",
+          "score": 91
+        }
+      ]
+    },
+    {
+      "id": "coding",
+      "icon": "💻",
+      "title": "AIコーディング",
+      "description": "開発者の生産性を革命的に向上",
+      "keywords": [
+        {
+          "name": "Coding Agent",
+          "tag": "HOT",
+          "description": "コード生成・リファクタリング・PR作成を自律実行。Claude Code、Codex、Cursor Agent など。",
+          "score": 96
+        },
+        {
+          "name": "AI Copilot",
+          "tag": "CORE",
+          "description": "IDE 内で補完・提案するAIアシスタント。GitHub Copilot、Cursor、Windsurf など。",
+          "score": 93
+        },
+        {
+          "name": "Vibe Coding",
+          "tag": "RISING",
+          "description": "自然言語で感覚的にコード生成。試作や個人開発で存在感が増している。",
+          "score": 80
+        },
+        {
+          "name": "AI Code Review",
+          "tag": "NEW",
+          "description": "AIがPRを自動レビューし、バグ検出・セキュリティ指摘・改善提案を行う。",
+          "score": 75
+        }
+      ]
+    },
+    {
+      "id": "generative-media",
+      "icon": "🎨",
+      "title": "画像・動画・音声生成",
+      "description": "クリエイティブAIの最前線",
+      "keywords": [
+        {
+          "name": "AI Video Generation",
+          "tag": "HOT",
+          "description": "テキストから高品質動画生成。Sora、Veo、Kling、Runway などの競争が激化。",
+          "score": 93
+        },
+        {
+          "name": "Image Generation (最新)",
+          "tag": "HOT",
+          "description": "Midjourney、Flux、GPT-4o 系など、品質と操作性が大きく進化。",
+          "score": 91
+        },
+        {
+          "name": "Voice AI / TTS",
+          "tag": "RISING",
+          "description": "自然な音声合成・リアルタイム翻訳・会話体験が進化。",
+          "score": 84
+        },
+        {
+          "name": "Synthetic Content",
+          "tag": "NEW",
+          "description": "AI生成コンテンツの識別・検証技術。C2PA や Content Credentials の重要性が増す。",
+          "score": 72
+        }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "icon": "⚡",
+      "title": "AIインフラ＆ハードウェア",
+      "description": "AIを支える基盤技術",
+      "keywords": [
+        {
+          "name": "AI Data Center",
+          "tag": "HOT",
+          "description": "AI専用データセンターの急増。電力需要と冷却技術が大きな課題。",
+          "score": 94
+        },
+        {
+          "name": "GPU / AI Accelerator",
+          "tag": "CORE",
+          "description": "NVIDIA、AMD、Google などのAIチップ競争が継続。計算資源が戦略資産に。",
+          "score": 90
+        },
+        {
+          "name": "Edge AI",
+          "tag": "RISING",
+          "description": "デバイス側でAI処理。低レイテンシー・高プライバシーでIoTやスマホに広がる。",
+          "score": 83
+        },
+        {
+          "name": "Neuromorphic Computing",
+          "tag": "NEW",
+          "description": "人間の脳を模したチップ設計。超低電力で高効率なAI処理を目指す。",
+          "score": 65
+        },
+        {
+          "name": "AI Energy / Power",
+          "tag": "CORE",
+          "description": "AIの電力消費が国家レベルに拡大。効率と持続可能性が重要テーマ。",
+          "score": 88
+        }
+      ]
+    },
+    {
+      "id": "rag-search",
+      "icon": "🔍",
+      "title": "RAG・検索・知識拡張",
+      "description": "LLMの知識を外部で補完",
+      "keywords": [
+        {
+          "name": "RAG (検索拡張生成)",
+          "tag": "CORE",
+          "description": "外部知識ベースを検索してLLMに提供。企業AIの基盤技術。",
+          "score": 92
+        },
+        {
+          "name": "Agentic RAG",
+          "tag": "RISING",
+          "description": "エージェントが自律的に検索戦略を立て、複数ソースから情報を収集・統合する次世代RAG。",
+          "score": 85
+        },
+        {
+          "name": "AI Search",
+          "tag": "HOT",
+          "description": "検索エンジンとLLMの融合。会話型検索体験が一般化。",
+          "score": 89
+        },
+        {
+          "name": "Vector Database",
+          "tag": "NEW",
+          "description": "埋め込みベクトルを高速検索。Pinecone、Weaviate、Milvus、pgvector など。",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "id": "safety-governance",
+      "icon": "🛡️",
+      "title": "セキュリティ・倫理・ガバナンス",
+      "description": "AIの安全な活用に向けて",
+      "keywords": [
+        {
+          "name": "AI Safety",
+          "tag": "HOT",
+          "description": "AIの暴走・悪用防止。Alignment、Red Teaming、Jailbreak 対策など。",
+          "score": 87
+        },
+        {
+          "name": "AI Regulation",
+          "tag": "RISING",
+          "description": "EU AI Act をはじめ、高リスクAIシステムへの規制が本格化。",
+          "score": 82
+        },
+        {
+          "name": "AI Cybersecurity",
+          "tag": "CORE",
+          "description": "AI対AIのサイバーセキュリティ攻防。自動脅威検知とAI生成攻撃のせめぎ合い。",
+          "score": 86
+        },
+        {
+          "name": "Sovereign AI",
+          "tag": "NEW",
+          "description": "国が独自のAIインフラ・データ・モデルを保有する流れ。国家戦略として重要。",
+          "score": 79
+        }
+      ]
+    },
+    {
+      "id": "industry-applications",
+      "icon": "🌐",
+      "title": "応用分野＆産業別AI",
+      "description": "実世界で活躍するAI技術",
+      "keywords": [
+        {
+          "name": "Physical AI / ロボット",
+          "tag": "HOT",
+          "description": "実世界で動作するAI。産業ロボット、自律走行、ドローンなど。",
+          "score": 91
+        },
+        {
+          "name": "Digital Twin",
+          "tag": "RISING",
+          "description": "物理システムのデジタル複製。AIと組み合わせたリアルタイム最適化が進む。",
+          "score": 81
+        },
+        {
+          "name": "AI Discovery / AlphaEvolve",
+          "tag": "RISING",
+          "description": "LLMが新しいアルゴリズムや発見を支援。研究・最適化分野で注目。",
+          "score": 88
+        },
+        {
+          "name": "AI Healthcare",
+          "tag": "NEW",
+          "description": "創薬・診断支援・個別化医療など、医療へのAI活用が加速。",
+          "score": 85
+        },
+        {
+          "name": "AI Robotaxi / 自動運転",
+          "tag": "HOT",
+          "description": "Waymo や各社の自動運転競争が継続。都市部での商用化が加速。",
+          "score": 84
+        }
+      ]
+    }
+  ]
+}
